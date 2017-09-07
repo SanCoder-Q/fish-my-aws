@@ -1,3 +1,9 @@
+This repo is forked from [bash-my-aws](https://github.com/realestate-com-au/bash-my-aws).
+
+The aim is to make it fishable. It is in progress now.
+
+===========
+
 [![TravisCI](https://api.travis-ci.org/realestate-com-au/bash-my-aws.svg)](https://travis-ci.org/realestate-com-au/bash-my-aws/builds)
 
 bash-my-aws
