@@ -1,0 +1,20 @@
+#!/usr/local/bin/fish
+
+# fma
+#
+# Provides alternative to loading the functions into your
+# shell environment.
+#
+# Useful for calling a function from another process (like 'env')
+#
+# e.g. env FOO=BAR fma instances
+#
+# Add it to your PATH or copy/link it to somewhere that is
+#
+# Assumes you have installed fish-my-aws to standard location
+
+for f in ~/.fish-my-aws/lib/*functions.fish
+  source $f
+end
+
+eval $argv
