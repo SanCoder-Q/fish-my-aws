@@ -1,6 +1,7 @@
 #!/usr/local/bin/fish
 
-source (dirname (status -f))/../lib/shared-functions.fish
+set SOURCE_DIR (dirname (status -f))
+set ROOT_DIR $SOURCE_DIR/..
 
 function before
 end
@@ -56,7 +57,7 @@ function suite_fma_read_inputs
 end
 
 if not set -q tank_running
-  source (dirname (status -f))/helper.fish
+  source $ROOT_DIR/test/helper.fish
   before
   tank_run
   after
