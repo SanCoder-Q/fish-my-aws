@@ -2,4 +2,5 @@
 
 set -l SOURCE_DIR (cd ( dirname (status --current-filename) ); and pwd)
 
-source $SOURCE_DIR/../test/shared-spec.fish
+fish $SOURCE_DIR/../test/shared-spec.fish
+fish $SOURCE_DIR/../test/stack-spec.fish
